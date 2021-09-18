@@ -1,7 +1,7 @@
 {
   
   "name": "linkr",
-  "homepage": "https://github.com/rom1976/linktree.git",
+  "homepage": "https://rom1976.github.io/linktree/",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
