@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/rom1976/linktree.git/static/css/main.94c507bb.chunk.css",
+    "main.js": "/rom1976/linktree.git/static/js/main.43f7d201.chunk.js",
+    "main.js.map": "/rom1976/linktree.git/static/js/main.43f7d201.chunk.js.map",
+    "runtime-main.js": "/rom1976/linktree.git/static/js/runtime-main.8324d35a.js",
+    "runtime-main.js.map": "/rom1976/linktree.git/static/js/runtime-main.8324d35a.js.map",
+    "static/js/2.03ba4ddf.chunk.js": "/rom1976/linktree.git/static/js/2.03ba4ddf.chunk.js",
+    "static/js/2.03ba4ddf.chunk.js.map": "/rom1976/linktree.git/static/js/2.03ba4ddf.chunk.js.map",
+    "static/js/3.7c18b1c1.chunk.js": "/rom1976/linktree.git/static/js/3.7c18b1c1.chunk.js",
+    "static/js/3.7c18b1c1.chunk.js.map": "/rom1976/linktree.git/static/js/3.7c18b1c1.chunk.js.map",
+    "index.html": "/rom1976/linktree.git/index.html",
+    "static/css/main.94c507bb.chunk.css.map": "/rom1976/linktree.git/static/css/main.94c507bb.chunk.css.map",
+    "static/js/2.03ba4ddf.chunk.js.LICENSE.txt": "/rom1976/linktree.git/static/js/2.03ba4ddf.chunk.js.LICENSE.txt",
+    "static/media/Page1.css": "/rom1976/linktree.git/static/media/linkr.2ddcccd7.jpeg",
+    "static/media/linktree-marketing-website-profile-images.5132b57e.gif": "/rom1976/linktree.git/static/media/linktree-marketing-website-profile-images.5132b57e.gif",
+    "static/media/mobileoutline.78601978.png": "/rom1976/linktree.git/static/media/mobileoutline.78601978.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8324d35a.js",
+    "static/js/2.03ba4ddf.chunk.js",
+    "static/css/main.94c507bb.chunk.css",
+    "static/js/main.43f7d201.chunk.js"
+  ]
+}
