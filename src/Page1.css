@@ -1,0 +1,147 @@
+.page1{
+  width: 100%;
+  height:100%;
+  text-align: center;
+  padding-top: 150px;
+  
+}
+
+h1{
+    font-weight:normal;
+    font-size:4vw;
+    
+}
+
+h3{
+    font-weight:normal;
+    font-size:1.5vw;
+    margin-top:0;
+   
+}
+
+.page1-button{
+    border:0px;
+    border-radius: 10px;
+    height: 50px;
+    padding: 5px 15px;
+    background-color: rgb(81, 70, 233);
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+
+.fly img {
+  margin-right: 10px;
+  width: 15px;
+  opacity: .4;
+  position:absolute;
+  transition: top 2s, left 2s, transform 3s ;
+  transition-timing-function: ease-in-out; 
+  z-index: -4;
+}
+
+.an4 > img{
+    width:15%;
+    height: 50;
+    top:40%;
+    left:10%;
+    opacity: .6;
+    animation: mymove 5s infinite;
+}
+
+.an5 > img{
+    width:15%;
+    height: 50;
+    top:40%;
+    left:20%;
+    opacity: .6;
+    animation: mymove 4s infinite;
+}
+.an6 > img{
+    width:15%;
+    height: 50;
+    top:40%;
+    right:20%;
+    opacity: .6;
+    animation: mymovel 4s infinite;
+}
+
+
+@keyframes mymove {
+    100% { 
+    background-color: rgba(245, 239, 239,.5);
+    position:absolute;
+    top: 80%;
+    left: 40%;
+    transform: rotate(50deg);
+    
+  }
+}
+
+@keyframes mymovel {
+    100% { 
+    background-color: rgba(245, 239, 239,.5);
+    position:absolute;
+    top: 80%;
+    right: 40%;
+    transform: rotate(50deg);
+    
+  }
+}
+
+.mobile{
+    width:370px;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: -2;
+   
+   
+}
+.mobile-marketing{
+    width: 26%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 13%;
+    margin-left:37%;
+  
+}
+.mobile-img {
+    background: linear-gradient(rgb(65, 151, 231), rgb(87, 235, 112));  
+    width:100%;
+   
+    height: 100%;
+    border-radius: 60px;
+    padding-left: 0px;
+    
+    
+}
+
+.mobile-bottom{
+    width:100%;
+    height: 400px;
+    position: relative;
+}
+.div-left{
+    width: 50%;
+    min-height: 300px;
+    float:left;
+    position: absolute;
+}
+
+.div-right{
+    width: 50%;
+    min-height: 300px;
+    float:left;
+    position: absolute;
+    border-left: 1px solid rgb(86, 43, 187);
+    border-style: dashed;
+}
+.input-b{
+    background-image: url(./media/linkr.jpeg);
+    background-size: 30px;
+    background-position: left;
+}

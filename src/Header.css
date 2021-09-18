@@ -1,0 +1,102 @@
+body{
+  height: 900px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:white;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  line-height: 50px;
+  font-size: 15px;
+}
+.navbar img{
+  width:21px;
+  float:left;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+.navbar .txt{
+  float:left;
+  line-height: 50px;
+  margin-right: 20px;
+  padding-top:16px;
+  font-size: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color:white;
+    
+  }
+
+  .login ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  
+
+  }
+  
+  li {
+    float: left;
+    margin-right:50px;
+    line-height: 50px;
+    
+  }
+
+  .login ul li{
+    float: right;
+    margin-right:50px;
+    line-height: 50px;
+  
+  
+
+  }
+  
+  li a , .login ul li a{
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 50px;
+   
+  }
+  
+  li a:hover:not(.active) , .login ul li a:hover:not(.active) {
+    background-color:transparent;
+    text-decoration: underline;
+    text-underline-offset: 30px;
+
+    cursor: pointer;
+  }
+ 
+
+  .login{
+    float:right;
+  }
+
+  .s-button{
+    background-color: rgb(126, 214, 126);
+    border:0px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 35px;
+    width: auto;
+    float: right;
+    margin-right: 30px;
+    margin-top: 22px;
+    padding: 5px 15px;
+  }
+
+  .s-button:hover{
+    background-color: rgb(17, 172, 17);
+  }
+ 
