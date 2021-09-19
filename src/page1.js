@@ -25,21 +25,32 @@ const Page1 = () =>{
 
       const Mobile  = () => {
           return(
-              <div className='mobile'>
+              <div className='row-1'>
+                  <div className='mobile'>
                   <img className='mobile-marketing' src={LinkrMarketing} alt='Lintree logo' />
                    <img className='mobile-img' src={MobileOutLine} alt='mobile border' />
                    
               </div>
+              </div>
+              
           )
       }
 
       const MobileBottom = () => {    
+          const prefix = 'linktr.ee';
          return(
              <>
                 <div className='mobile-bottom'>
-                    <div className='left-div'></div>
-                    <div className='right-div'></div> 
-                    <input className='input-b' placeholder='yourname'></input>
+                    <div className='div-left'></div>
+                    <div className='div-right'></div> 
+
+                <div className='row-input'>
+                    <div className='div-input'>
+                      <span className='prefix'>Linktr.ee/</span>
+                      <input className='input-area' placeholder='yournamehere'></input>
+                    </div>
+                </div>
+                    
                 </div>
              </>
          )

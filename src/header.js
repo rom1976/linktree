@@ -17,8 +17,6 @@ const Header = () =>{
             <div className='login'><ul><li key={'login'}> <a href='/#'> Login</a></li></ul>
            
             </div>
-            
-            
             </div>
            
             </>
