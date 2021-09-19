@@ -11,10 +11,10 @@ const Header = () =>{
             <div className='navbar'> 
             <img src={linkr} alt ='Linktree Logo'/><span className='txt'>linktree</span>
             <ul> 
-             { list.map((lst1) => <li> <a>{lst1}</a></li> )    }
+             { list.map((lst1,listId) => <li key={listId}> <a href='/#'>{lst1}</a></li> )    }
             </ul>
             <button className='s-button'>SIGN UP FREE</button>
-            <div className='login'><ul><li><a>Login</a></li></ul>
+            <div className='login'><ul><li key={'login'}> <a href='/#'> Login</a></li></ul>
            
             </div>
             

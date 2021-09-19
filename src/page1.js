@@ -9,14 +9,14 @@ const Page1 = () =>{
       const Ani = () =>{
           return (
               <>
-              <div className='fly an4'>
-               <img src={Eventbr} />
+              <div className='fly an4' >
+               <img src={Eventbr} alt='Eventbrite'/>
               </div>
-               <div className='fly an5'>
-               <img src={Pinterest} />
+               <div className='fly an5' >
+               <img src={Pinterest} alt ='Pinterest'/>
               </div>
               <div className='fly an6'>
-               <img src={Yout} />
+               <img src={Yout} alt ='Youtube'/>
               </div>
               </>
           )
@@ -26,14 +26,14 @@ const Page1 = () =>{
       const Mobile  = () => {
           return(
               <div className='mobile'>
-                  <img className='mobile-marketing' src={LinkrMarketing} />
-                   <img className='mobile-img' src={MobileOutLine} />
+                  <img className='mobile-marketing' src={LinkrMarketing} alt='Lintree logo' />
+                   <img className='mobile-img' src={MobileOutLine} alt='mobile border' />
                    
               </div>
           )
       }
 
-      const mobileBottom = () => {    
+      const MobileBottom = () => {    
          return(
              <>
                 <div className='mobile-bottom'>
@@ -60,7 +60,7 @@ const Page1 = () =>{
         </p>
         <Ani />
         <Mobile />
-        <mobileBottom />
+        <MobileBottom />
         </div>
        
 
