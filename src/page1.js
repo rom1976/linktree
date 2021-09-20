@@ -1,3 +1,4 @@
+//import { useState} from 'react';
 import './Page1.css'
 import Instagram from './media/instagrm.png';
 import Eventbr from './media/eventbr.png';
@@ -6,37 +7,54 @@ import Yout from './media/yout.png';
 import MobileOutLine from './media/mobileoutline.png';
 import LinkrMarketing from './media/linktree-marketing-website-profile-images.gif';
 const Page1 = () =>{
-     
+         //const [animCycle, setanimCycle] = useState([1]);
+
       const Ani = () =>{
           const images = [
-                     {src:Instagram, alt:'Instagram', ani:7},
-                     {src:Eventbr, alt:'Eventbrite',ani:4},
-                     {src:Pinterest, alt:'Pinterest', ani:5},
-                     {src:Yout, alt:'Youtube',ani:6},
+                     {src:Instagram, alt:'Instagram', ani:6,width:'5%',},
+                     {src:Eventbr, alt:'Eventbrite',ani:3,width:'15%'},
+                     {src:Pinterest, alt:'Pinterest', ani:5,width:'15%'},
+                     {src:Yout, alt:'Youtube',ani:4,width:'15%'},
         ];
-
+          
+            
            let aniLeft = 10;
            let aniRight = 10;
+          
 
           return (
               <>
               {
-                 images.map((image, id) =>{
+                    images.map((image, id) =>{
                     let output;
+                    aniLeft=(image.ani*2)+'%';
+                    aniRight=(image.ani*2)+'%';
+                    let imageWidth = image.width; 
+                    //let im = Math.floor((Math.random() * animCycle.length)+1)
                     
-                    if(image.ani === 6 || 7)
-                        output =   <img src={image.src} alt={image.alt} style={{right:`{${aniRight+=20}%`}}/>;
-                             console.log(output);
-                        output = <img src={image.src} alt={image.alt} style={{left:`{${aniLeft+=20}%`}}/>;
+    
+                    if(image.ani === 6 || image.ani === 5){
                         
-
+                        output =  <img src={image.src} alt={image.alt} style={{ width:imageWidth,
+                        top:'40%',
+                        right:aniRight,
+                        opacity: .9,
+                        animation: `mymovel ${image.ani}s infinite`}}/>;
+                    }else{
+                        
+                        output = <img src={image.src} alt={image.alt} style={{  width:imageWidth,
+                        top:'40%',
+                        left: aniLeft,
+                        opacity: .9,
+                        animation: `mymove ${image.ani}s infinite`}}/>;
+                    }
+                        
 
                      return (
                         
-                         <div key={id} className={`fly an${image.ani}`}>
+                         <div key={id} className='fly'>
                             
-                            {output}     
-                            {console.log(output)}
+                            {output}   
                             
                          </div>
                      )

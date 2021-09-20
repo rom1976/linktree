@@ -31,7 +31,7 @@ h3{
     
 }
 
-.fly img {
+.fly img  {
   margin-right: 10px;
   width: 15px;
   position:absolute;
@@ -39,39 +39,6 @@ h3{
   transition-timing-function: ease-in-out; 
   z-index: -4;
 }
-
-.an4 > img{
-    width:15%;
-    height: 50px;
-    top:40%;
-    left:10%;
-    opacity: .6;
-    animation: mymove 5s infinite;
-}
-
-.an5 > img{
-    width:15%;
-    height: 50;
-    top:40%;
-    left:20%;
-    opacity: .6;
-    animation: mymove 4s infinite;
-}
-.an6 > img{
-    width:15%;
-    height: 50;
-    top:40%;
-    opacity: .6;
-    animation: mymovel 4s infinite;
-}
-.an7 > img{
-    width:5%;
-    height: 50;
-    top:40%;
-    opacity: .9;
-    animation: mymovel 5s infinite;
-}
-
 
 @keyframes mymove {
     100% { 
@@ -89,7 +56,7 @@ h3{
     background-color: rgba(245, 239, 239,.5);
     position:absolute;
     top: 100%;
-    right: 50%;
+    right: 51%;
     opacity: 1;
     transform: rotate(50deg);
     
