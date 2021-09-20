@@ -1,4 +1,5 @@
 import './Page1.css'
+import Instagram from './media/instagrm.png';
 import Eventbr from './media/eventbr.png';
 import Pinterest from './media/pinterest.png';
 import Yout from './media/yout.png'; 
@@ -7,17 +8,44 @@ import LinkrMarketing from './media/linktree-marketing-website-profile-images.gi
 const Page1 = () =>{
      
       const Ani = () =>{
+          const images = [
+                     {src:Instagram, alt:'Instagram', ani:7},
+                     {src:Eventbr, alt:'Eventbrite',ani:4},
+                     {src:Pinterest, alt:'Pinterest', ani:5},
+                     {src:Yout, alt:'Youtube',ani:6},
+        ];
+
+           let aniLeft = 10;
+           let aniRight = 10;
+
           return (
               <>
-              <div className='fly an4' >
-               <img src={Eventbr} alt='Eventbrite'/>
-              </div>
-               <div className='fly an5' >
-               <img src={Pinterest} alt ='Pinterest'/>
-              </div>
-              <div className='fly an6'>
-               <img src={Yout} alt ='Youtube'/>
-              </div>
+              {
+                 images.map((image, id) =>{
+                    let output;
+                    
+                    if(image.ani === 6 || 7)
+                        output =   <img src={image.src} alt={image.alt} style={{right:`{${aniRight+=20}%`}}/>;
+                             console.log(output);
+                        output = <img src={image.src} alt={image.alt} style={{left:`{${aniLeft+=20}%`}}/>;
+                        
+
+
+                     return (
+                        
+                         <div key={id} className={`fly an${image.ani}`}>
+                            
+                            {output}     
+                            {console.log(output)}
+                            
+                         </div>
+                     )
+                 })
+                
+                }
+          
+             
+              
               </>
           )
       } 
@@ -29,6 +57,15 @@ const Page1 = () =>{
                   <div className='mobile'>
                   <img className='mobile-marketing' src={LinkrMarketing} alt='Lintree logo' />
                    <img className='mobile-img' src={MobileOutLine} alt='mobile border' />
+                   <div className='mob-txt-div'>
+                       <div className='mob-txt'> </div>
+                       <div className='mob-txt'> </div>
+                       <div className='mob-txt'> </div>
+                       <div className='mob-txt'> </div>
+                       <div className='mob-txt'> </div>
+                    
+                   </div>
+                   
                    
               </div>
               </div>
@@ -37,7 +74,6 @@ const Page1 = () =>{
       }
 
       const MobileBottom = () => {    
-          const prefix = 'linktr.ee';
          return(
              <>
                 <div className='mobile-bottom'>

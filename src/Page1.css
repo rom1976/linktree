@@ -34,16 +34,15 @@ h3{
 .fly img {
   margin-right: 10px;
   width: 15px;
-  opacity: .4;
   position:absolute;
-  transition: top 2s, left 2s, transform 3s ;
+  transition: opacity 2s, top 2s, left 2s, transform 3s ;
   transition-timing-function: ease-in-out; 
   z-index: -4;
 }
 
 .an4 > img{
     width:15%;
-    height: 50;
+    height: 50px;
     top:40%;
     left:10%;
     opacity: .6;
@@ -62,9 +61,15 @@ h3{
     width:15%;
     height: 50;
     top:40%;
-    right:20%;
     opacity: .6;
     animation: mymovel 4s infinite;
+}
+.an7 > img{
+    width:5%;
+    height: 50;
+    top:40%;
+    opacity: .9;
+    animation: mymovel 5s infinite;
 }
 
 
@@ -72,8 +77,8 @@ h3{
     100% { 
     background-color: rgba(245, 239, 239,.5);
     position:absolute;
-    top: 80%;
-    left: 40%;
+    top: 100%;
+    left: 50%;
     transform: rotate(50deg);
     
   }
@@ -83,8 +88,9 @@ h3{
     100% { 
     background-color: rgba(245, 239, 239,.5);
     position:absolute;
-    top: 80%;
-    right: 40%;
+    top: 100%;
+    right: 50%;
+    opacity: 1;
     transform: rotate(50deg);
     
   }
@@ -95,7 +101,7 @@ h3{
     justify-content: center;
 }
  .mobile{
-    max-width:375px;
+    max-width: 400px;
     margin-top: 10%;
     z-index: -2;
     background: linear-gradient(rgb(65, 151, 231), rgb(87, 235, 112)); 
@@ -111,9 +117,31 @@ h3{
   
 }
 .mobile-img {
-    max-width:385px;
+    max-width:420px;
     padding-left: 0px;
 
+}
+
+.mob-txt-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    
+    border-radius: 10px;
+    
+    width:100%;
+    
+}
+
+.mob-txt{
+    
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    height: 55px;
+    width:80%;
 }
 
 
