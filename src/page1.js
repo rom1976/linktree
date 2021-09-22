@@ -1,4 +1,6 @@
-//import { useState} from 'react';
+import { useState,useEffect} from 'react';
+import { useTransition, animated } from 'react-spring';
+
 import './Page1.css'
 import Instagram from './media/instagrm.png';
 import Eventbr from './media/eventbr.png';
@@ -7,7 +9,15 @@ import Yout from './media/yout.png';
 import MobileOutLine from './media/mobileoutline.png';
 import LinkrMarketing from './media/linktree-marketing-website-profile-images.gif';
 const Page1 = () =>{
-         //const [animCycle, setanimCycle] = useState([1]);
+         const [items, setItems] = useState([]);
+         const transition  = useTransition(items,{
+            from:{ y:0, height: 10,width:50, opacity: 0},
+            enter: item => async (next) => {
+                await next({  y:item.y, opacity:1,width: item.width, height: 60, delay:item.delay});
+            },
+            
+            }  
+         )
 
       const Ani = () =>{
           const images = [
@@ -21,6 +31,8 @@ const Page1 = () =>{
            let aniLeft = 10;
            let aniRight = 10;
           
+    
+
 
           return (
               <>
@@ -71,21 +83,30 @@ const Page1 = () =>{
 
       const Mobile  = () => {
           return(
-              <div className='row-1'>
+              <div className='row-1' onMouseEnter ={ ()=>{ setItems( v => v.length ? [] :
+                 [
+                 { y: 10,width: 350, delay:100},
+                 {y: 10,width: 350,delay:200},
+                 {y: 10,width: 350,delay:300},
+                 {y: 10,width: 350,delay:400},
+                 {y: 10,width: 350,delay:500}
+
+                 ]); }}>
+
                   <div className='mobile'>
-                  <img className='mobile-marketing' src={LinkrMarketing} alt='Lintree logo' />
-                   <img className='mobile-img' src={MobileOutLine} alt='mobile border' />
-                   <div className='mob-txt-div'>
-                       <div className='mob-txt'> </div>
-                       <div className='mob-txt'> </div>
-                       <div className='mob-txt'> </div>
-                       <div className='mob-txt'> </div>
-                       <div className='mob-txt'> </div>
+                    <img className='mobile-marketing' src={LinkrMarketing} alt='Lintree logo' />
+                    <img className='mobile-img' src={MobileOutLine} alt='mobile border' />
+                   <div className='mob-txt-container'>
+                      {
+                        transition((style,item)=> item && <animated.div style={style} className='mob-txt'/> 
+                        )
+                       }
+
                     
                    </div>
                    
                    
-              </div>
+                  </div>
               </div>
               
           )
@@ -96,15 +117,13 @@ const Page1 = () =>{
              <>
                 <div className='mobile-bottom'>
                     <div className='div-left'></div>
-                    <div className='div-right'></div> 
-
+                    <div className='div-right'></div>
+                </div>
                 <div className='row-input'>
                     <div className='div-input'>
                       <span className='prefix'>Linktr.ee/</span>
                       <input className='input-area' placeholder='yournamehere'></input>
                     </div>
-                </div>
-                    
                 </div>
              </>
          )

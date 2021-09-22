@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .page1{
   width: 100%;
   height:100%;
@@ -63,66 +66,68 @@ h3{
   }
 }
 
-.row-1, .mobile{
+.row-1{
     display: flex;
     justify-content: center;
+    height: 1000px;
 }
+
  .mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 400px;
     margin-top: 10%;
     z-index: -2;
     background: linear-gradient(rgb(65, 151, 231), rgb(87, 235, 112)); 
     position: relative;
-    border-radius: 60px; 
+    border-radius: 60px;
+   
 }
 
-.mobile .mobile-marketing{
+.mobile > .mobile-marketing{
     width: 26%;
     border-radius: 50%;
     position: absolute;
-    margin-top: 13%;
-  
+    top:5%;
+
 }
 .mobile-img {
-    max-width:420px;
+    max-width:425px;
     padding-left: 0px;
-
 }
 
-.mob-txt-div{
+.mobile > .mob-txt-container{  
     display: flex;
-    align-items: center;
     flex-direction: column;
-    position: absolute;
-    top: 200px;
-    
+    justify-content: center;
+    align-items: center;  
+    top:20%;
     border-radius: 10px;
-    
-    width:100%;
-    
+    position: absolute;
+    width:90%;    
 }
-
 .mob-txt{
-    
     margin-top: 20px;
     background-color: white;
     border-radius: 10px;
-    height: 55px;
-    width:80%;
+    height: 57px;
+    width:92%;
 }
 
 
 
 .mobile-bottom{
+    display: flex;
+    justify-content: center;
     padding-top: 0px;
     width:100%;
-    height: 400px;
-   
+    height: 130px;  
 }
 .mobile-bottom > .div-left {
-    display: inline-block;
+    flex: 50%;
     margin-top: 0px;
-    width: 45%;
     min-height: 100px;
     border-right: 2px solid rgb(93, 39, 218);
     border-right-style: dashed;
@@ -130,8 +135,7 @@ h3{
 
 
 .mobile-bottom > .div-right{
-    display: inline-block;
-    width: 45%;
+    flex:50%;
     min-height: 100px;
 }
    
@@ -142,7 +146,7 @@ h3{
 }
 
 .row-input .div-input{
-    display:flex;
+   display :flex;
     width: 35vw;
     height: 5vw;
     border-radius: 50px;
