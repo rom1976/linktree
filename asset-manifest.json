@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/linktree/static/css/main.0b415e75.chunk.css",
-    "main.js": "/linktree/static/js/main.f141f59b.chunk.js",
-    "main.js.map": "/linktree/static/js/main.f141f59b.chunk.js.map",
-    "runtime-main.js": "/linktree/static/js/runtime-main.2d0fdd07.js",
-    "runtime-main.js.map": "/linktree/static/js/runtime-main.2d0fdd07.js.map",
-    "static/js/2.03ba4ddf.chunk.js": "/linktree/static/js/2.03ba4ddf.chunk.js",
-    "static/js/2.03ba4ddf.chunk.js.map": "/linktree/static/js/2.03ba4ddf.chunk.js.map",
-    "static/js/3.7c18b1c1.chunk.js": "/linktree/static/js/3.7c18b1c1.chunk.js",
-    "static/js/3.7c18b1c1.chunk.js.map": "/linktree/static/js/3.7c18b1c1.chunk.js.map",
+    "main.css": "/linktree/static/css/main.1e102a97.chunk.css",
+    "main.js": "/linktree/static/js/main.b1c407af.chunk.js",
+    "main.js.map": "/linktree/static/js/main.b1c407af.chunk.js.map",
+    "runtime-main.js": "/linktree/static/js/runtime-main.72b02ea7.js",
+    "runtime-main.js.map": "/linktree/static/js/runtime-main.72b02ea7.js.map",
+    "static/js/2.3dafe2fe.chunk.js": "/linktree/static/js/2.3dafe2fe.chunk.js",
+    "static/js/2.3dafe2fe.chunk.js.map": "/linktree/static/js/2.3dafe2fe.chunk.js.map",
+    "static/js/3.8c101e8d.chunk.js": "/linktree/static/js/3.8c101e8d.chunk.js",
+    "static/js/3.8c101e8d.chunk.js.map": "/linktree/static/js/3.8c101e8d.chunk.js.map",
     "index.html": "/linktree/index.html",
-    "static/css/main.0b415e75.chunk.css.map": "/linktree/static/css/main.0b415e75.chunk.css.map",
-    "static/js/2.03ba4ddf.chunk.js.LICENSE.txt": "/linktree/static/js/2.03ba4ddf.chunk.js.LICENSE.txt",
+    "static/css/main.1e102a97.chunk.css.map": "/linktree/static/css/main.1e102a97.chunk.css.map",
+    "static/js/2.3dafe2fe.chunk.js.LICENSE.txt": "/linktree/static/js/2.3dafe2fe.chunk.js.LICENSE.txt",
     "static/media/Page1.css": "/linktree/static/media/linkr.2ddcccd7.jpeg",
     "static/media/linktree-marketing-website-profile-images.5132b57e.gif": "/linktree/static/media/linktree-marketing-website-profile-images.5132b57e.gif",
     "static/media/mobileoutline.78601978.png": "/linktree/static/media/mobileoutline.78601978.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2d0fdd07.js",
-    "static/js/2.03ba4ddf.chunk.js",
-    "static/css/main.0b415e75.chunk.css",
-    "static/js/main.f141f59b.chunk.js"
+    "static/js/runtime-main.72b02ea7.js",
+    "static/js/2.3dafe2fe.chunk.js",
+    "static/css/main.1e102a97.chunk.css",
+    "static/js/main.b1c407af.chunk.js"
   ]
 }
